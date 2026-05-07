@@ -1,0 +1,4 @@
+/target/
+/database/database.lock.db
+/database/database.mv.db
+/.idea/
