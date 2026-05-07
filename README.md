@@ -12,8 +12,10 @@ Build the application: `./mvnw package`
 Start the application: `java -jar target/*.jar`
 
 Send some requests to it using curl or other HTTP client:
-`curl -X PUT --header "Content-Type: application/json" -d '{  "name": "Keyboard",  "description": "Ergonomic Keyboard",  "price": 60 }' http://localhost:8080/api/products/AK12345`
-`curl http://localhost:8080/api/products/AK12345`
-`curl http://localhost:8080/api/products/AK12346`
+```
+curl -X PUT --header "Content-Type: application/json" -d '{  "name": "Keyboard",  "description": "Ergonomic Keyboard",  "price": 60 }' http://localhost:8080/api/products/AK12345
+curl http://localhost:8080/api/products/AK12345
+curl http://localhost:8080/api/products/AK12346
+```
 
 See the traces in Jaeger at http://localhost:16686/
